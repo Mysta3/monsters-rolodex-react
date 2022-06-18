@@ -26,7 +26,12 @@ class App extends Component {
    }); 
   }
 
-
+  onSearchChange = (event) => {
+            const searchField = event.target.value.toLocaleLowerCase();
+            this.setState(() => { 
+                return { searchField }
+              });
+            };
 
   render(){
     console.log('render');
@@ -39,10 +44,9 @@ class App extends Component {
           className='search-box' 
           type="text" 
           placeholder="Search Monsters" 
-          onChange={(event) => {
-            const searchField = event.target.value.toLocaleLowerCase();
-            this.setState(() => { return { searchField }});
-        }}/>
+          onChange={this.onSearchChange}
+          />
+        <h1>Monsters Rolodex React App</h1>
        {
         filteredMonsters.map((monster, index) => {
           return (
