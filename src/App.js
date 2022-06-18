@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import CardList from './components/card-list/cardList.component';
 import './App.css';
 
 class App extends Component {
@@ -26,6 +27,7 @@ class App extends Component {
    }); 
   }
 
+
   onSearchChange = (event) => {
             const searchField = event.target.value.toLocaleLowerCase();
             this.setState(() => { 
@@ -48,16 +50,7 @@ class App extends Component {
           placeholder="Search Monsters" 
           onChange={onSearchChange}
           />
-        <h1>Monsters Rolodex React App</h1>
-       {
-        filteredMonsters.map((monster, index) => {
-          return (
-                  <div key={index}>
-                    <h1> {monster.name}</h1>
-                  </div>
-                );
-        })
-       }
+        <CardList monsters={filteredMonsters}/>
       </div>
     );
   }
