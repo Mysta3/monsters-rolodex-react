@@ -1,8 +1,11 @@
 # Monsters Rolodex
+![image](https://user-images.githubusercontent.com/44353909/174460477-9e53071f-d7f1-4887-8b2f-6b904caefa39.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Uses a third party API.....
+Uses a third party API for data and images
+- [Robohash](https://robohash.org/) Images
+- [JSON placeholder](https://jsonplaceholder.typicode.com/users) Data
 
 ## Purpose
 - To kick start my brain into thinking in the ways of React. 
@@ -12,6 +15,7 @@ Uses a third party API.....
 - moved anonymous onChange function out of input component and into the Class object so that it doesn't get re-rendered every time since it's not being changed. Creates a more performant application.
   
 - Destructured values in order to enhance readability
+
 ## Available Scripts
 
 In the project directory, you can run:
