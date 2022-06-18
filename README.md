@@ -7,6 +7,11 @@ Uses a third party API.....
 ## Purpose
 - To kick start my brain into thinking in the ways of React. 
 - A good starter project that deals with Component LifeCycles, Dynamic Searching and API calls to display information dynamically.
+
+## Optimizations
+- moved anonymous onChange function out of input component and into the Class object so that it doesn't get re-rendered every time since it's not being changed. Creates a more performant application.
+  
+- Destructured values in order to enhance readability
 ## Available Scripts
 
 In the project directory, you can run:
