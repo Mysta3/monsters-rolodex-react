@@ -1,5 +1,4 @@
 import './card.styles.css';
-
 const Card = ({name, email, id}) =>  {
   return (
     <div className='card-container' key={id}>
